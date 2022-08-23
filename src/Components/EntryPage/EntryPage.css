@@ -1,0 +1,26 @@
+.p {
+    text-align:center;
+}
+
+.registration {
+    display: flex;
+    gap : 6rem;
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+
+.reg > button {
+    width : 200%;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    color:azure;
+    background-color: rgb(227, 163, 0);
+    font-weight: bold;
+}
+
+.reg > button:hover {
+    color: rgb(23, 22, 22);
+}
