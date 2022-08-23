@@ -26,15 +26,17 @@ h2 {
 
 body {
   /* font-family: 'Montserrat', sans-serif; */
-  font-family: 'Roboto Slab', serif;
+  /* font-family: 'Roboto Slab', serif; */
   /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.7;
   width: 100%; 
   margin: 0 auto;
 } 
 
 p {
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
   color: rgba(0, 0, 0, 0.812);
 }
 
