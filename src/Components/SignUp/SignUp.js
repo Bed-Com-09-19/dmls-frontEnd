@@ -18,11 +18,6 @@ function SignUp() {
         password2: ''
    }
    
-   // navigation
-   const navigate = useNavigate();
-
-   // end of navigation
-
    const [formValues, setFormValues] = useState(initialValues);
    const [errors, setFormErros] = useState({});
    const [isSubmit, setIsSubmit] = useState(false);
@@ -109,7 +104,7 @@ function SignUp() {
     const [goToSignIn, setGoToSignIn] = React.useState(false);
 
     if (goToSignIn) {
-    return <Navigate to="/SingIn"/>
+        return <Navigate to="/SingIn"/>
     }
   return (
     <div className="main-container">

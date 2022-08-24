@@ -5,16 +5,19 @@ import "./EntryPage.css";
 
 
 function EntryPage() {
+  const [goToSignIn, setSignIn] = useState(false);
+
   const [goToHome, setGoToHome] = useState(false);
-  const [signIn, setSignIn] = useState(false);
+
+  if (goToSignIn) {
+    return <Navigate to="/SingIn"/>
+  }
 
   if (goToHome) {
     return <Navigate to="/SignUp"/>
   }
 
-  if (signIn) {
-    return <Navigate to="/SingIn"/>
-  }
+  
 
   return (
     <main id="Entry">

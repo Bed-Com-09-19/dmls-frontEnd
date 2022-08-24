@@ -51,7 +51,6 @@ function App() {
                 {user && (<Route path="/Form" element={<Form files={files} setFiles={setFiles} removeFile={removeFile}/>}/>)}
                 {user && (<Route path="/Loan" element={<Loan/>}/>)}
 
-                <Route path="/*" element={<Navigate to={user ? "/SingIn" : "/SignUp"}/>}/>
 
             </Routes>
         </Router>

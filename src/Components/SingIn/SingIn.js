@@ -18,6 +18,7 @@ export default function SingIn({authenticate}) {
         setIsSubmited(true);
     }
 
+
     let usernameOrEmail = "";
     let password= "";
 
@@ -54,9 +55,15 @@ export default function SingIn({authenticate}) {
             },
             body:JSON.stringify(dataSingIn)
         }).then((res) => {
-            console.warn("response", res);
-            setIsSubmited(true);
-            goToApply();
+            if (res.status !== 401) {
+                console.warn("response", res);
+                setIsSubmited(true);
+                goToApply();
+            }
+
+            else {
+                setIsSubmited(false);
+            }            
         }).catch((err) => {
             console.warn(err);
           })
